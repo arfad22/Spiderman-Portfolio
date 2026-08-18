@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="semiconductor">
+<html lang="en" data-theme="miles">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohammed Arfad K | Hardware & Validation Test Engineer</title>
   <meta name="description" content="Electronics & Communication Engineering graduate specializing in ATE-driven debugging, signal integrity verification, RTL design in Verilog, and defense-grade hardware validation.">
-  <meta name="theme-color" content="#00f0ff">
+  <meta name="theme-color" content="#ff0055">
 
   <!-- Open Graph / Social Meta -->
   <meta property="og:title" content="Mohammed Arfad K | Hardware & Validation Test Engineer">
-  <meta property="og:description" content="ECE Graduate • ATE Debugging • Signal Integrity • RTL Design • Avionics Electronics Validation">
+  <meta property="og:description" content="ECE Graduate • ATE Debugging • Signal Integrity • RTL Design • Defense Avionics Electronics Validation">
   <meta property="og:type" content="website">
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Space Grotesk, Bebas Neue, Outfit, Fira Code -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Code:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -24,17 +24,17 @@
 </head>
 <body>
 
-  <!-- Circuit Trace Interactive Background Canvas -->
+  <!-- Interactive Spider-Web / Circuit Background Canvas -->
   <canvas id="webCanvas" class="web-canvas" aria-hidden="true"></canvas>
 
-  <!-- Ambient High-Tech Grid Overlay -->
+  <!-- Ambient Comic Halftone Overlay -->
   <div class="halftone-overlay" aria-hidden="true"></div>
 
-  <!-- Real-Time Hardware Signal Scanner Notification -->
+  <!-- Spider-Sense Alert Banner -->
   <div id="spiderSenseBanner" class="spider-sense-banner" aria-live="polite">
     <div class="spider-sense-indicator">
       <span class="lightning-bolt">⚡</span>
-      <span class="sense-text">SPIDER-SENSE & SIGNAL LOCK: 100% HARDWARE INTEGRITY VERIFIED</span>
+      <span class="sense-text">SPIDER-SENSE TINGLING: 100% SIGNAL INTEGRITY & CONTINUITY VERIFIED!</span>
       <span class="lightning-bolt">⚡</span>
     </div>
   </div>
@@ -42,9 +42,14 @@
   <!-- Navigation Bar -->
   <header class="spidey-header">
     <nav class="spidey-nav container" aria-label="Main Navigation">
-      <a href="#hero" class="nav-logo" aria-label="Mohammed Arfad K Home">
+      <a href="#hero" class="nav-logo" aria-label="Spider-Man Logo Home">
         <div class="logo-spider-icon">
-          <i class="fa-solid fa-microchip"></i>
+          <svg viewBox="0 0 100 100" class="spider-svg">
+            <path d="M50 20 C42 20 38 28 38 35 C38 42 42 48 50 48 C58 48 62 42 62 35 C62 28 58 20 50 20 Z" class="spider-head" />
+            <path d="M50 48 C36 48 30 60 30 72 C30 85 40 92 50 92 C60 92 70 85 70 72 C70 60 64 48 50 48 Z" class="spider-body" />
+            <path d="M40 32 Q20 20 8 30 M40 38 Q15 38 4 50 M40 44 Q16 58 8 72 M40 50 Q22 75 18 90" class="spider-leg left" />
+            <path d="M60 32 Q80 20 92 30 M60 38 Q85 38 96 50 M60 44 Q84 58 92 72 M60 50 Q78 75 82 90" class="spider-leg right" />
+          </svg>
         </div>
         <div class="logo-text-wrap">
           <span class="logo-title">ARFAD<span class="dot">.</span>K</span>
@@ -54,62 +59,62 @@
 
       <!-- Desktop Navigation Links -->
       <ul class="nav-menu" id="navMenu">
-        <li><a href="#about" class="nav-link"><i class="fa-solid fa-user-tie"></i> Profile</a></li>
-        <li><a href="#skills" class="nav-link"><i class="fa-solid fa-microchip"></i> Skills</a></li>
+        <li><a href="#origin" class="nav-link"><i class="fa-solid fa-mask"></i> Origin</a></li>
+        <li><a href="#powers" class="nav-link"><i class="fa-solid fa-bolt"></i> Powers</a></li>
         <li><a href="#experience" class="nav-link"><i class="fa-solid fa-shield-halved"></i> Experience</a></li>
-        <li><a href="#projects" class="nav-link"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+        <li><a href="#missions" class="nav-link"><i class="fa-solid fa-crosshairs"></i> Missions</a></li>
         <li><a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
-        <li><a href="#contact" class="nav-link"><i class="fa-solid fa-satellite-dish"></i> Contact</a></li>
+        <li><a href="#signal" class="nav-link"><i class="fa-solid fa-satellite-dish"></i> Signal</a></li>
       </ul>
 
-      <!-- Interactive Controls -->
+      <!-- Interactive Controls: Theme Switcher & SFX Audio -->
       <div class="nav-actions">
         <!-- SFX Sound Toggle -->
-        <button id="sfxToggle" class="action-btn" title="Toggle Hardware Audio Feedback" aria-label="Toggle Sound Effects">
+        <button id="sfxToggle" class="action-btn" title="Toggle Spidey Web SFX" aria-label="Toggle Sound Effects">
           <i class="fa-solid fa-volume-high"></i>
           <span class="action-tooltip">SFX ON</span>
         </button>
 
-        <!-- Mode Theme Switcher -->
+        <!-- Multiverse Suit Switcher Dropdown -->
         <div class="suit-switcher-wrap">
-          <button id="suitBtn" class="action-btn suit-btn" aria-haspopup="true" aria-expanded="false" title="Switch Theme Mode">
-            <i class="fa-solid fa-mask"></i>
-            <span class="suit-name-label">Silicon Blue</span>
+          <button id="suitBtn" class="action-btn suit-btn" aria-haspopup="true" aria-expanded="false" title="Switch Multiverse Suit">
+            <i class="fa-solid fa-shirt"></i>
+            <span class="suit-name-label">Miles Morales</span>
             <i class="fa-solid fa-chevron-down caret"></i>
           </button>
           <div class="suit-dropdown" id="suitDropdown" role="menu">
-            <button class="suit-option active" data-suit="semiconductor" role="menuitem">
+            <button class="suit-option active" data-suit="miles" role="menuitem">
               <span class="suit-dot miles-dot"></span>
               <div>
-                <strong>Silicon Cyan</strong>
-                <small>ATE &amp; Cleanroom Lab</small>
+                <strong>Miles Morales</strong>
+                <small>Neon Bio-Electric • Spider-Verse</small>
               </div>
             </button>
             <button class="suit-option" data-suit="classic" role="menuitem">
               <span class="suit-dot classic-dot"></span>
               <div>
-                <strong>Avionics Red</strong>
-                <small>Spider-Hero Suit Mode</small>
+                <strong>Classic Peter Parker</strong>
+                <small>Vintage Red &amp; Blue • Earth-616</small>
               </div>
             </button>
             <button class="suit-option" data-suit="symbiote" role="menuitem">
               <span class="suit-dot symbiote-dot"></span>
               <div>
-                <strong>Stealth Chrome</strong>
-                <small>Midnight PCB Matrix</small>
+                <strong>Symbiote Stealth</strong>
+                <small>Midnight Shadow &amp; Chrome</small>
               </div>
             </button>
             <button class="suit-option" data-suit="2099" role="menuitem">
               <span class="suit-dot 2099-dot"></span>
               <div>
-                <strong>Cyber 2099</strong>
-                <small>Laser Holographic FPGA</small>
+                <strong>Spider-Man 2099</strong>
+                <small>Cyberpunk Laser &amp; Hologram</small>
               </div>
             </button>
           </div>
         </div>
 
-        <!-- Mobile Menu Toggle -->
+        <!-- Mobile Hamburger Toggle -->
         <button id="hamburgerBtn" class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -128,13 +133,13 @@
           <div class="comic-issue-tag">
             <span class="tag-badge">ECE GRADUATE</span>
             <span class="tag-text">RNSIT BENGALURU • CGPA 8.51</span>
-            <span class="tag-status"><span class="status-pulse"></span> READY FOR HARDWARE ROLES</span>
+            <span class="tag-status"><span class="status-pulse"></span> READY FOR HARDWARE MISSIONS</span>
           </div>
 
           <h1 class="hero-title">
-            <span class="greeting">HELLO, I AM</span>
+            <span class="greeting">HEY THERE, I'M</span>
             <span class="hero-name glitch-text" data-text="MOHAMMED ARFAD K">MOHAMMED ARFAD K</span>
-            <span class="hero-tagline">HARDWARE &amp; VALIDATION <br><span class="highlight-code">&lt;TEST ENGINEER /&gt;</span></span>
+            <span class="hero-tagline">YOUR FRIENDLY NEIGHBORHOOD <br><span class="highlight-code">&lt;HARDWARE &amp; VALIDATION ENGINEER /&gt;</span></span>
           </h1>
 
           <p class="hero-bio">
@@ -142,20 +147,20 @@
           </p>
 
           <div class="hero-cta-group">
-            <a href="#contact" class="spidey-btn primary-btn btn-thwip">
-              <span class="btn-spider-icon"><i class="fa-solid fa-paper-plane"></i></span>
-              <span class="btn-text">GET IN TOUCH</span>
-              <span class="btn-burst">CONNECTED!</span>
+            <a href="#missions" class="spidey-btn primary-btn btn-thwip">
+              <span class="btn-spider-icon"><i class="fa-solid fa-crosshairs"></i></span>
+              <span class="btn-text">EXPLORE MISSIONS</span>
+              <span class="btn-burst">THWIP!</span>
             </a>
-            <a href="#projects" class="spidey-btn secondary-btn">
-              <span class="btn-text"><i class="fa-solid fa-diagram-project"></i> VIEW PROJECTS</span>
+            <a href="#signal" class="spidey-btn secondary-btn">
+              <span class="btn-text"><i class="fa-solid fa-paper-plane"></i> SEND SPIDER-SIGNAL</span>
             </a>
-            <button id="spiderSenseBtn" class="spidey-btn alert-btn" title="Run Signal Diagnostic">
+            <button id="spiderSenseBtn" class="spidey-btn alert-btn" title="Test Spider-Sense & Signal Integrity!">
               <i class="fa-solid fa-bolt"></i> SPIDER-SENSE
             </button>
           </div>
 
-          <!-- Key Quick Metrics -->
+          <!-- Quick Stat Badges -->
           <div class="hero-stats">
             <div class="stat-item">
               <div class="stat-num" data-val="8.51">8.51</div>
@@ -174,92 +179,109 @@
             <div class="stat-divider"></div>
             <div class="stat-item">
               <div class="stat-num" data-val="6">6+</div>
-              <div class="stat-label">RTL &amp; IoT Projects</div>
+              <div class="stat-label">RTL &amp; IoT Missions</div>
             </div>
           </div>
         </div>
 
-        <!-- Right Hero Visual: Half Mask Professional Photo Card -->
+        <!-- Right Hero Interactive Animated Spidey Mask Hologram Card -->
         <div class="hero-visual">
           <div class="spidey-hologram-card" id="spideyCard">
             <div class="card-glass-glow"></div>
-            <div class="comic-stamp">DUAL IDENTITY</div>
-
-            <!-- Half Suit & Half Spider-Man Mask Photo -->
-            <div class="profile-photo-container">
-              <div class="photo-glow-ring"></div>
-              <div class="photo-border-cyber">
-                <img src="arfad.jpg" alt="Mohammed Arfad K - Half Mask Professional Portrait" class="profile-avatar-img">
+            <div class="comic-stamp">CLASSIFIED SPEC</div>
+            
+            <!-- Interactive Animated Spidey Mask -->
+            <div class="spidey-mask-wrapper">
+              <div class="web-pattern-bg"></div>
+              <div class="mask-container">
+                <!-- Spidey Eyes with tracking glow -->
+                <div class="spidey-eye left-eye">
+                  <div class="eye-outer">
+                    <div class="eye-inner"></div>
+                  </div>
+                </div>
+                <div class="spidey-eye right-eye">
+                  <div class="eye-outer">
+                    <div class="eye-inner"></div>
+                  </div>
+                </div>
+                <div class="mask-web-lines">
+                  <div class="web-line v-line"></div>
+                  <div class="web-line h-line1"></div>
+                  <div class="web-line h-line2"></div>
+                  <div class="web-line d-line1"></div>
+                  <div class="web-line d-line2"></div>
+                </div>
               </div>
             </div>
 
-            <!-- Floating Badges -->
+            <!-- Floating Comic Badges -->
             <div class="floating-badge badge-top-left">
-              <i class="fa-solid fa-user-tie"></i> EXECUTIVE SUIT
+              <i class="fa-solid fa-microchip"></i> ATE &amp; DFT
             </div>
             <div class="floating-badge badge-bottom-right">
-              <i class="fa-solid fa-mask"></i> SPIDER HERO
+              <i class="fa-solid fa-wave-square"></i> SIGNAL INTEGRITY
             </div>
             <div class="floating-badge badge-mid-left">
-              <i class="fa-solid fa-microchip"></i> ATE &amp; RTL
+              <i class="fa-solid fa-code"></i> VERILOG HDL
             </div>
           </div>
         </div>
       </div>
 
       <div class="scroll-indicator">
-        <a href="#about" aria-label="Scroll down to Profile">
+        <a href="#origin" aria-label="Scroll down to origin story">
           <span class="mouse-icon"><span class="mouse-wheel"></span></span>
-          <span class="scroll-text">EXPLORE PROFILE</span>
+          <span class="scroll-text">SWING DOWN</span>
         </a>
       </div>
     </section>
 
-    <!-- CAREER OBJECTIVE & PROFILE -->
-    <section id="about" class="section-padding origin-section">
+    <!-- ORIGIN STORY / CAREER OBJECTIVE -->
+    <section id="origin" class="section-padding origin-section">
       <div class="container">
         <div class="section-header text-center">
-          <div class="section-badge"><i class="fa-solid fa-user-tie"></i> PROFESSIONAL PROFILE</div>
-          <h2 class="section-title">CAREER OBJECTIVE</h2>
-          <p class="section-subtitle">Dedicated to precision hardware validation, silicon testing, and embedded reliability.</p>
+          <div class="section-badge"><i class="fa-solid fa-book-open"></i> SECRET IDENTITY &amp; OBJECTIVE</div>
+          <h2 class="section-title">THE ORIGIN &amp; OBJECTIVE</h2>
+          <p class="section-subtitle">Electronics &amp; Communication Engineering graduate driven by precision hardware testing, silicon reliability, and digital logic design.</p>
         </div>
 
         <div class="origin-grid">
-          <!-- Story / Objective Panel -->
+          <!-- Comic Panel 1: Story & Objective -->
           <div class="comic-panel story-panel">
-            <div class="comic-corner-label">OVERVIEW</div>
+            <div class="comic-corner-label">PAGE 01</div>
             <div class="panel-inner">
-              <h3 class="panel-title"><i class="fa-solid fa-bullseye"></i> ENGINEERING OBJECTIVE</h3>
+              <h3 class="panel-title"><i class="fa-solid fa-quote-left"></i> WITH GREAT HARDWARE...</h3>
               <p class="comic-text">
-                Electronics &amp; Communication Engineering graduate seeking a <strong>Hardware/Validation Test Engineer</strong> role in the semiconductor or embedded domain.
+                ...comes great responsibility for bulletproof reliability! Seeking a <strong>Hardware/Validation Test Engineer</strong> role in the semiconductor or embedded domain where every signal, timing trace, and clock edge matters.
               </p>
               <p class="comic-text">
-                Possesses hands-on experience in <strong>ATE-driven structured debugging</strong>, <strong>signal integrity verification</strong>, <strong>continuity testing</strong>, and <strong>DFT principles</strong> gained through a defense-grade avionics electronics internship at <strong>SLN Technologies</strong>, complemented by RTL/FSM design and simulation experience in Verilog HDL.
+                Equipped with hands-on experience in <strong>ATE-driven structured debugging</strong>, <strong>signal integrity verification</strong>, <strong>continuity testing</strong>, and <strong>DFT principles</strong> from a defense-grade avionics electronics internship at <strong>SLN Technologies</strong>, complemented by RTL/FSM design and simulation in Verilog HDL.
               </p>
               <p class="comic-text">
                 Eager to contribute to hardware bring-up, functional validation, and test-plan execution in a quality-driven electronics validation team.
               </p>
 
               <div class="origin-quote-box">
-                <p class="spidey-quote">"With great engineering precision comes bulletproof hardware reliability."</p>
-                <span class="quote-author">— Mohammed Arfad K</span>
+                <p class="spidey-quote">"Anyone can wear the mask. What matters is how meticulously you validate the silicon."</p>
+                <span class="quote-author">— Mohammed Arfad K (Hardware Slinger)</span>
               </div>
             </div>
           </div>
 
-          <!-- Power Grid / Competencies -->
+          <!-- Comic Panel 2: Power Grid / Attributes -->
           <div class="comic-panel stats-panel">
-            <div class="comic-corner-label">CORE COMPETENCIES</div>
+            <div class="comic-corner-label">HERO STATS</div>
             <div class="panel-inner">
-              <h3 class="panel-title"><i class="fa-solid fa-chart-simple"></i> HARDWARE SKILL MATRIX</h3>
-
+              <h3 class="panel-title"><i class="fa-solid fa-chart-simple"></i> POWER GRID</h3>
+              
               <div class="power-bars">
                 <div class="power-bar-item">
                   <div class="bar-header">
                     <span><i class="fa-solid fa-wave-square"></i> ATE Debugging &amp; Signal Integrity</span>
-                    <strong>95%</strong>
+                    <strong>96%</strong>
                   </div>
-                  <div class="progress-track"><div class="progress-fill" style="--w: 95%;"></div></div>
+                  <div class="progress-track"><div class="progress-fill" style="--w: 96%;"></div></div>
                 </div>
 
                 <div class="power-bar-item">
@@ -289,24 +311,24 @@
                 <div class="power-bar-item">
                   <div class="bar-header">
                     <span><i class="fa-solid fa-network-wired"></i> Embedded Systems &amp; IoT Interfaces</span>
-                    <strong>90%</strong>
+                    <strong>94%</strong>
                   </div>
-                  <div class="progress-track"><div class="progress-fill" style="--w: 90%;"></div></div>
+                  <div class="progress-track"><div class="progress-fill" style="--w: 94%;"></div></div>
                 </div>
               </div>
 
               <div class="hero-quick-specs">
                 <div class="spec-card">
                   <i class="fa-solid fa-location-dot"></i>
-                  <div><strong>Location:</strong> Bengaluru, India</div>
+                  <div><strong>HQ:</strong> Bengaluru, India</div>
                 </div>
                 <div class="spec-card">
                   <i class="fa-solid fa-phone"></i>
-                  <div><strong>Phone:</strong> (+91) 8618724140</div>
+                  <div><strong>Comm:</strong> (+91) 8618724140</div>
                 </div>
                 <div class="spec-card">
                   <i class="fa-solid fa-envelope"></i>
-                  <div><strong>Email:</strong> arfadarfad96@gmail.com</div>
+                  <div><strong>Signal:</strong> arfadarfad96@gmail.com</div>
                 </div>
               </div>
             </div>
@@ -315,25 +337,25 @@
       </div>
     </section>
 
-    <!-- TECHNICAL SKILLS & DOMAINS -->
-    <section id="skills" class="section-padding powers-section">
+    <!-- SPIDER-ABILITIES / TECHNICAL SKILLS -->
+    <section id="powers" class="section-padding powers-section">
       <div class="container">
         <div class="section-header text-center">
-          <div class="section-badge"><i class="fa-solid fa-microchip"></i> TECHNICAL ARSENAL</div>
-          <h2 class="section-title">SKILLS &amp; PROFICIENCIES</h2>
-          <p class="section-subtitle">Comprehensive capabilities across validation engineering, test instrumentation, RTL design, and embedded architectures.</p>
+          <div class="section-badge"><i class="fa-solid fa-dna"></i> TECH ARSENAL</div>
+          <h2 class="section-title">SUPERPOWERS &amp; TECH STACK</h2>
+          <p class="section-subtitle">Battle-tested tools, protocols, and lab equipment armed in my hardware engineering utility belt.</p>
         </div>
 
         <div class="powers-grid">
           <!-- Category 1: Validation & Test -->
           <div class="power-card">
-            <div class="card-corner-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <div class="card-corner-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
             <h3 class="power-card-title">VALIDATION &amp; TEST</h3>
-            <span class="power-card-cat">Hardware Bring-up &amp; Verification</span>
+            <span class="power-card-cat">Hardware Bring-up &amp; ATE Engineering</span>
             <p class="power-desc">Structured execution of test plans, hardware bring-up, continuity verification, and defect isolation on production &amp; defense modules.</p>
             <div class="tech-tags">
               <span class="tag"><i class="fa-solid fa-microchip"></i> Hardware Bring-up</span>
-              <span class="tag"><i class="fa-solid fa-bug"></i> ATE Debugging</span>
+              <span class="tag"><i class="fa-solid fa-robot"></i> ATE Debugging</span>
               <span class="tag"><i class="fa-solid fa-shield"></i> DFT Principles</span>
               <span class="tag"><i class="fa-solid fa-bolt"></i> Continuity Testing</span>
               <span class="tag"><i class="fa-solid fa-wave-square"></i> Signal Integrity</span>
@@ -343,10 +365,10 @@
 
           <!-- Category 2: Test Instruments -->
           <div class="power-card">
-            <div class="card-corner-icon"><i class="fa-solid fa-gauge-high"></i></div>
+            <div class="card-corner-icon"><i class="fa-solid fa-dumbbell"></i></div>
             <h3 class="power-card-title">TEST INSTRUMENTS</h3>
             <span class="power-card-cat">Lab &amp; Bench Test Equipment</span>
-            <p class="power-desc">Expertise in operating industry-standard lab test gear for waveform analysis, timing diagnostics, and signal verification.</p>
+            <p class="power-desc">Operating professional-grade test &amp; measurement gear for waveform analysis, timing diagnostics, and signal verification.</p>
             <div class="tech-tags">
               <span class="tag"><i class="fa-solid fa-tv"></i> Tektronix Oscilloscope</span>
               <span class="tag"><i class="fa-solid fa-chart-line"></i> Logic Analyzer</span>
@@ -359,7 +381,7 @@
 
           <!-- Category 3: RTL & Digital Design -->
           <div class="power-card">
-            <div class="card-corner-icon"><i class="fa-solid fa-code"></i></div>
+            <div class="card-corner-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
             <h3 class="power-card-title">RTL / DIGITAL DESIGN</h3>
             <span class="power-card-cat">Verilog HDL &amp; EDA Simulation</span>
             <p class="power-desc">Design and simulation of synchronous digital circuits, FSMs, serial communication controllers, and verification testbenches.</p>
@@ -375,7 +397,7 @@
 
           <!-- Category 4: Protocols & EDA Review -->
           <div class="power-card">
-            <div class="card-corner-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <div class="card-corner-icon"><i class="fa-solid fa-eye"></i></div>
             <h3 class="power-card-title">PROTOCOLS &amp; SCHEMATICS</h3>
             <span class="power-card-cat">Interfaces, EDA &amp; Documentation</span>
             <p class="power-desc">Serial protocol debugging, schematic design rule checking, and rigorous technical validation documentation.</p>
@@ -392,16 +414,16 @@
       </div>
     </section>
 
-    <!-- PROFESSIONAL EXPERIENCE - MODULAR INSIDE BLOCKS -->
+    <!-- PROFESSIONAL EXPERIENCE SECTION -->
     <section id="experience" class="section-padding missions-section">
       <div class="container">
         <div class="section-header text-center">
-          <div class="section-badge"><i class="fa-solid fa-shield-halved"></i> INDUSTRY EXPERIENCE</div>
+          <div class="section-badge"><i class="fa-solid fa-shield-halved"></i> BATTLE LOG</div>
           <h2 class="section-title">PROFESSIONAL EXPERIENCE</h2>
-          <p class="section-subtitle">Avionics &amp; Defense electronic validation at SLN Technologies Pvt. Ltd.</p>
+          <p class="section-subtitle">Real-world avionics &amp; defense electronic validation at SLN Technologies Pvt. Ltd.</p>
         </div>
 
-        <!-- Experience Header Card Block -->
+        <!-- Experience Header Banner -->
         <div class="exp-hero-banner">
           <div class="exp-hero-left">
             <div class="exp-badge-icon"><i class="fa-solid fa-plane-up"></i></div>
@@ -413,11 +435,11 @@
           </div>
           <div class="exp-hero-right">
             <span class="exp-pill-date"><i class="fa-solid fa-calendar-days"></i> Jan 2026 – May 2026</span>
-            <span class="exp-pill-status"><i class="fa-solid fa-certificate"></i> 5 Months Full-Time</span>
+            <span class="exp-pill-status"><i class="fa-solid fa-circle-check"></i> 5 Months Full-Time</span>
           </div>
         </div>
 
-        <!-- Clean Modular Grid of Responsibilities -->
+        <!-- 5 Clean Modular Blocks -->
         <div class="exp-blocks-grid">
           <!-- Block 1 -->
           <div class="exp-modular-card">
@@ -426,7 +448,7 @@
               <span class="exp-card-number">01</span>
             </div>
             <h4 class="exp-card-heading">Signal Integrity &amp; Continuity Testing</h4>
-            <p class="exp-card-body">Performed rigorous continuity verification and signal integrity testing on assembled PCB and electronic modules using Tektronix oscilloscopes, logic analyzers, and digital multimeters strictly adhering to validation test plans.</p>
+            <p class="exp-card-body">Performed rigorous continuity verification and signal integrity testing on assembled PCB/electronic modules using Tektronix oscilloscopes, logic analyzers, and digital multimeters in accordance with structured validation test plans.</p>
             <div class="exp-card-chips">
               <span>Tektronix Scope</span>
               <span>Logic Analyzers</span>
@@ -441,7 +463,7 @@
               <span class="exp-card-number">02</span>
             </div>
             <h4 class="exp-card-heading">ATE Debugging &amp; DFT Principles</h4>
-            <p class="exp-card-body">Applied Design-for-Test (DFT) architectures and Automated Test Equipment (ATE)-driven debugging methodologies in a live production hardware environment with direct exposure to ATE programming workflows.</p>
+            <p class="exp-card-body">Applied Design-for-Test (DFT) principles and Automated Test Equipment (ATE)-driven debugging methodologies in a production hardware environment, gaining exposure to ATE programming.</p>
             <div class="exp-card-chips">
               <span>ATE Programming</span>
               <span>DFT Architecture</span>
@@ -456,7 +478,7 @@
               <span class="exp-card-number">03</span>
             </div>
             <h4 class="exp-card-heading">Schematic Review &amp; Circuit Verification</h4>
-            <p class="exp-card-body">Contributed to defense-grade subsystem schematic reviews, verifying signal routing, power planes, and component correctness against design specifications while identifying critical design rule violations.</p>
+            <p class="exp-card-body">Contributed to schematic design review and circuit verification for defense-grade subsystems, checking signal routing and component correctness against design specifications and identifying design rule violations.</p>
             <div class="exp-card-chips">
               <span>Schematic Review</span>
               <span>Design Rule Check</span>
@@ -471,7 +493,7 @@
               <span class="exp-card-number">04</span>
             </div>
             <h4 class="exp-card-heading">Hardware Fault Isolation &amp; EMI Fixes</h4>
-            <p class="exp-card-body">Isolated and resolved complex hardware anomalies including power sequencing faults, UART serial communication dropouts, and EMI-induced signal degradation via systematic root-cause analysis.</p>
+            <p class="exp-card-body">Debugged hardware issues including power sequencing faults, UART communication failures, and EMI-related signal integrity problems applying systematic root-cause analysis.</p>
             <div class="exp-card-chips">
               <span>Power Sequencing</span>
               <span>UART Debugging</span>
@@ -486,7 +508,7 @@
               <span class="exp-card-number">05</span>
             </div>
             <h4 class="exp-card-heading">Hardware Integration, Test Fixtures &amp; Compliance</h4>
-            <p class="exp-card-body">Assisted in hardware integration phases, designed specialized test fixtures, and drafted comprehensive assembly and validation compliance documentation following defense-grade quality protocols.</p>
+            <p class="exp-card-body">Assisted in hardware integration, assembly documentation, test fixture design, and validation testing during system integration phases, following structured test plans and documenting results.</p>
             <div class="exp-card-chips">
               <span>Test Fixture Design</span>
               <span>System Integration</span>
@@ -498,18 +520,18 @@
       </div>
     </section>
 
-    <!-- RTL & EMBEDDED PROJECTS -->
-    <section id="projects" class="section-padding timeline-section">
+    <!-- MISSIONS / PROJECTS GALLERY -->
+    <section id="missions" class="section-padding timeline-section">
       <div class="container">
         <div class="section-header text-center">
-          <div class="section-badge"><i class="fa-solid fa-diagram-project"></i> ENGINEERING PROJECTS</div>
-          <h2 class="section-title">FEATURED PROJECTS</h2>
-          <p class="section-subtitle">Demonstrated expertise across RTL digital design, embedded robotics, and IoT hardware.</p>
+          <div class="section-badge"><i class="fa-solid fa-crosshairs"></i> COMPLETED OPERATIONS</div>
+          <h2 class="section-title">FEATURED MISSIONS</h2>
+          <p class="section-subtitle">RTL digital design, embedded robotics, and IoT hardware projects built to conquer challenges.</p>
         </div>
 
         <!-- Filter Buttons -->
         <div class="mission-filters" role="tablist">
-          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn active" data-filter="all">All Missions</button>
           <button class="filter-btn" data-filter="rtl">RTL &amp; Digital Design</button>
           <button class="filter-btn" data-filter="embedded">Embedded &amp; IoT</button>
         </div>
@@ -518,7 +540,7 @@
           <!-- Project 1: UART -->
           <article class="mission-card" data-category="rtl">
             <div class="mission-image-wrapper">
-              <div class="mission-tag-badge">RTL DESIGN</div>
+              <div class="mission-tag-badge">MISSION #01</div>
               <div class="mission-mockup-art art-webverse">
                 <div class="mockup-screen">
                   <div class="mockup-bar"><span></span><span></span><span></span></div>
@@ -530,22 +552,21 @@
               </div>
             </div>
             <div class="mission-content">
-              <div class="mission-category-tag">VERILOG HDL • XILINX VIVADO</div>
-              <h3 class="mission-title">UART Transmitter &amp; Receiver Design</h3>
-              <p class="mission-desc">Designed and implemented a complete Universal Asynchronous Receiver Transmitter (UART) system with dedicated TX and RX modules supporting 8-bit serial framing, parity, and baud rate generation.</p>
+              <div class="mission-category-tag">RTL DESIGN • VERILOG HDL</div>
+              <h3 class="mission-title">UART Transmitter &amp; Receiver</h3>
+              <p class="mission-desc">Designed and implemented a Universal Asynchronous Receiver Transmitter (UART) system with separate TX and RX modules using Verilog HDL, supporting 8-bit data transmission with start and stop bit framing.</p>
               <div class="mission-tech">
                 <span>Verilog HDL</span>
                 <span>Xilinx Vivado</span>
                 <span>FSM Design</span>
                 <span>Testbench</span>
-                <span>Waveforms</span>
               </div>
               <div class="mission-links">
                 <a href="https://github.com/arfad22" target="_blank" rel="noopener noreferrer" class="m-link source-link">
                   <i class="fa-brands fa-github"></i> Repository
                 </a>
-                <a href="#contact" class="m-link demo-link">
-                  <i class="fa-solid fa-circle-info"></i> Details
+                <a href="#signal" class="m-link demo-link">
+                  <i class="fa-solid fa-circle-info"></i> Intel
                 </a>
               </div>
             </div>
@@ -554,7 +575,7 @@
           <!-- Project 2: Traffic Light FSM -->
           <article class="mission-card" data-category="rtl">
             <div class="mission-image-wrapper">
-              <div class="mission-tag-badge">FSM ARCHITECTURE</div>
+              <div class="mission-tag-badge">MISSION #02</div>
               <div class="mission-mockup-art art-cyber">
                 <div class="mockup-screen">
                   <div class="mockup-bar"><span></span><span></span><span></span></div>
@@ -566,22 +587,21 @@
               </div>
             </div>
             <div class="mission-content">
-              <div class="mission-category-tag">SYNCHRONOUS DIGITAL DESIGN</div>
+              <div class="mission-category-tag">FSM ARCHITECTURE • VERILOG</div>
               <h3 class="mission-title">Traffic Light Controller FSM</h3>
-              <p class="mission-desc">Implemented a 3-state (Red-Green-Yellow) finite state machine using industry-standard 2-always block coding style for clean separation of sequential state registers and combinational next-state logic.</p>
+              <p class="mission-desc">Designed and implemented a 3-state (Red-Green-Yellow) finite state machine using Verilog HDL following industry-standard 2-always block coding style for clean separation of sequential and combinational logic.</p>
               <div class="mission-tech">
                 <span>Verilog HDL</span>
-                <span>Vivado</span>
-                <span>FSM Modeling</span>
+                <span>Xilinx Vivado</span>
+                <span>FSM</span>
                 <span>ModelSim</span>
-                <span>Timing Analysis</span>
               </div>
               <div class="mission-links">
                 <a href="https://github.com/arfad22" target="_blank" rel="noopener noreferrer" class="m-link source-link">
                   <i class="fa-brands fa-github"></i> Repository
                 </a>
-                <a href="#contact" class="m-link demo-link">
-                  <i class="fa-solid fa-circle-info"></i> Details
+                <a href="#signal" class="m-link demo-link">
+                  <i class="fa-solid fa-circle-info"></i> Intel
                 </a>
               </div>
             </div>
@@ -590,7 +610,7 @@
           <!-- Project 3: HDLBits Digital Logic -->
           <article class="mission-card" data-category="rtl">
             <div class="mission-image-wrapper">
-              <div class="mission-tag-badge">RTL BENCHMARK</div>
+              <div class="mission-tag-badge">MISSION #03</div>
               <div class="mission-mockup-art art-ai">
                 <div class="mockup-screen">
                   <div class="mockup-bar"><span></span><span></span><span></span></div>
@@ -602,22 +622,21 @@
               </div>
             </div>
             <div class="mission-content">
-              <div class="mission-category-tag">COMBINATIONAL &amp; SEQUENTIAL</div>
+              <div class="mission-category-tag">RTL FUNDAMENTALS • HDLBITS</div>
               <h3 class="mission-title">Digital Logic Design Fundamentals</h3>
-              <p class="mission-desc">Comprehensive RTL verification suite covering MUXes, encoders, decoders, carry adders, D-flip-flops, synchronous counters, shift registers, and parameterised generate blocks.</p>
+              <p class="mission-desc">Systematic RTL design through HDLBits problem-solving platform covering combinational circuits (MUX, encoders, decoders, adders) and sequential circuits (flip-flops, counters, shift registers).</p>
               <div class="mission-tech">
                 <span>Verilog HDL</span>
                 <span>HDLBits</span>
-                <span>Combinational Logic</span>
-                <span>Sequential RTL</span>
+                <span>Always Blocks</span>
                 <span>Testbenches</span>
               </div>
               <div class="mission-links">
                 <a href="https://github.com/arfad22" target="_blank" rel="noopener noreferrer" class="m-link source-link">
                   <i class="fa-brands fa-github"></i> Repository
                 </a>
-                <a href="#contact" class="m-link demo-link">
-                  <i class="fa-solid fa-circle-info"></i> Details
+                <a href="#signal" class="m-link demo-link">
+                  <i class="fa-solid fa-circle-info"></i> Intel
                 </a>
               </div>
             </div>
@@ -626,7 +645,7 @@
           <!-- Project 4: Autonomous Agricultural Robot -->
           <article class="mission-card" data-category="embedded">
             <div class="mission-image-wrapper">
-              <div class="mission-tag-badge">EMBEDDED ROBOTICS</div>
+              <div class="mission-tag-badge">MISSION #04</div>
               <div class="mission-mockup-art art-task">
                 <div class="mockup-screen">
                   <div class="mockup-bar"><span></span><span></span><span></span></div>
@@ -638,22 +657,21 @@
               </div>
             </div>
             <div class="mission-content">
-              <div class="mission-category-tag">RASPBERRY PI • HARDWARE INTEGRATION</div>
+              <div class="mission-category-tag">EMBEDDED SYSTEMS • RASPBERRY PI</div>
               <h3 class="mission-title">Autonomous Agricultural Robot</h3>
-              <p class="mission-desc">Engineered a multi-sensor autonomous rover with YDLIDAR X2 LiDAR navigation, camera vision, soil moisture probe interfaces, and precision stepper motor controllers on embedded Linux.</p>
+              <p class="mission-desc">Integrated multi-sensor system on Raspberry Pi including LiDAR module (YDLIDAR X2), USB camera, soil moisture sensors, and stepper motor mechanism for autonomous navigation and monitoring.</p>
               <div class="mission-tech">
                 <span>Raspberry Pi</span>
                 <span>YDLIDAR X2</span>
-                <span>Embedded Linux</span>
-                <span>Motor Drivers</span>
-                <span>Power Design</span>
+                <span>Sensor Interfacing</span>
+                <span>Motor Control</span>
               </div>
               <div class="mission-links">
                 <a href="https://github.com/arfad22" target="_blank" rel="noopener noreferrer" class="m-link source-link">
                   <i class="fa-brands fa-github"></i> Repository
                 </a>
-                <a href="#contact" class="m-link demo-link">
-                  <i class="fa-solid fa-circle-info"></i> Details
+                <a href="#signal" class="m-link demo-link">
+                  <i class="fa-solid fa-circle-info"></i> Intel
                 </a>
               </div>
             </div>
@@ -662,7 +680,7 @@
           <!-- Project 5: FIDOFEED IoT Pet Feeder -->
           <article class="mission-card" data-category="embedded">
             <div class="mission-image-wrapper">
-              <div class="mission-tag-badge">IoT EMBEDDED</div>
+              <div class="mission-tag-badge">MISSION #05</div>
               <div class="mission-mockup-art art-webverse">
                 <div class="mockup-screen">
                   <div class="mockup-bar"><span></span><span></span><span></span></div>
@@ -674,22 +692,21 @@
               </div>
             </div>
             <div class="mission-content">
-              <div class="mission-category-tag">ESP32 • PROTOCOLS &amp; SENSORS</div>
+              <div class="mission-category-tag">IoT • ESP32 SMART FEEDER</div>
               <h3 class="mission-title">FIDOFEED – Smart Pet Feeder</h3>
-              <p class="mission-desc">Designed an IoT dispensing system using ESP32 with precision servo control, ESP32-CAM video streaming, low-power sleep modes, and MQTT protocol telemetry over WiFi.</p>
+              <p class="mission-desc">Designed ESP32-based system with servo motor control for food dispensing, ESP32-CAM for live video streaming, WiFi connectivity, and MQTT remote control protocol.</p>
               <div class="mission-tech">
                 <span>ESP32</span>
                 <span>ESP32-CAM</span>
                 <span>WiFi / MQTT</span>
-                <span>Servo Actuators</span>
-                <span>Power Design</span>
+                <span>Servo Control</span>
               </div>
               <div class="mission-links">
                 <a href="https://github.com/arfad22" target="_blank" rel="noopener noreferrer" class="m-link source-link">
                   <i class="fa-brands fa-github"></i> Repository
                 </a>
-                <a href="#contact" class="m-link demo-link">
-                  <i class="fa-solid fa-circle-info"></i> Details
+                <a href="#signal" class="m-link demo-link">
+                  <i class="fa-solid fa-circle-info"></i> Intel
                 </a>
               </div>
             </div>
@@ -698,7 +715,7 @@
           <!-- Project 6: Glucose Monitor IoT -->
           <article class="mission-card" data-category="embedded">
             <div class="mission-image-wrapper">
-              <div class="mission-tag-badge">MEDICAL DEVICE IoT</div>
+              <div class="mission-tag-badge">MISSION #06</div>
               <div class="mission-mockup-art art-cyber">
                 <div class="mockup-screen">
                   <div class="mockup-bar"><span></span><span></span><span></span></div>
@@ -710,22 +727,21 @@
               </div>
             </div>
             <div class="mission-content">
-              <div class="mission-category-tag">ARDUINO • PROTEUS • SAFETY INTERLOCK</div>
-              <h3 class="mission-title">Glucose Infusion Monitoring System</h3>
-              <p class="mission-desc">Developed a real-time medical fluid delivery monitor with automated fail-safe safety interlocks to prevent over/under-infusion, integrated with Telegram bot alerting and Proteus circuit simulation.</p>
+              <div class="mission-category-tag">MEDICAL IoT • ARDUINO IDE</div>
+              <h3 class="mission-title">Glucose Monitoring System</h3>
+              <p class="mission-desc">Developed IoT-based real-time glucose delivery monitoring system for medical applications with safety interlocks to prevent over/under-infusion scenarios, Telegram API alerting, and Proteus simulation.</p>
               <div class="mission-tech">
                 <span>Arduino IDE</span>
-                <span>Proteus Simulation</span>
+                <span>Proteus</span>
                 <span>Telegram API</span>
                 <span>Safety Interlocks</span>
-                <span>Sensors</span>
               </div>
               <div class="mission-links">
                 <a href="https://github.com/arfad22" target="_blank" rel="noopener noreferrer" class="m-link source-link">
                   <i class="fa-brands fa-github"></i> Repository
                 </a>
-                <a href="#contact" class="m-link demo-link">
-                  <i class="fa-solid fa-circle-info"></i> Details
+                <a href="#signal" class="m-link demo-link">
+                  <i class="fa-solid fa-circle-info"></i> Intel
                 </a>
               </div>
             </div>
@@ -734,13 +750,13 @@
       </div>
     </section>
 
-    <!-- EDUCATION - CLEAN MODULAR COMPARISON BLOCKS -->
+    <!-- EDUCATION & FOCUS AREAS - CLEAN MODULAR BLOCKS -->
     <section id="education" class="section-padding origin-section">
       <div class="container">
         <div class="section-header text-center">
           <div class="section-badge"><i class="fa-solid fa-graduation-cap"></i> ACADEMIC QUALIFICATIONS</div>
           <h2 class="section-title">EDUCATION &amp; FOCUS DOMAINS</h2>
-          <p class="section-subtitle">Rigorous academic foundation in Electronics &amp; Communication Engineering with high honors.</p>
+          <p class="section-subtitle">Rigorous academic foundation in Electronics &amp; Communication Engineering with distinction.</p>
         </div>
 
         <div class="education-modular-grid">
@@ -761,7 +777,7 @@
               <div class="score-val">8.51 <span class="score-scale">/ 10</span></div>
             </div>
 
-            <div class="edu-coursework-title">CORE AREAS OF STUDY:</div>
+            <div class="edu-coursework-title">CORE STUDY MODULES:</div>
             <div class="edu-coursework-tags">
               <span>VLSI Design</span>
               <span>Digital Signal Processing</span>
@@ -789,7 +805,7 @@
               <div class="score-val">9.20 <span class="score-scale">/ 10</span></div>
             </div>
 
-            <div class="edu-coursework-title">FOUNDATIONAL SUBJECTS:</div>
+            <div class="edu-coursework-title">FOUNDATIONAL MODULES:</div>
             <div class="edu-coursework-tags">
               <span>Digital Electronics</span>
               <span>Electronic Devices &amp; Circuits</span>
@@ -813,7 +829,7 @@
             <div class="focus-group-card">
               <div class="focus-group-header">
                 <i class="fa-solid fa-microchip"></i>
-                <h4>TECHNICAL SPECIALIZATIONS</h4>
+                <h4>TECHNICAL INTERESTS &amp; SPECIALIZATIONS</h4>
               </div>
               <div class="focus-items-list">
                 <div class="focus-item-box">
@@ -879,7 +895,7 @@
                   <i class="fa-solid fa-users-gear"></i>
                   <div>
                     <strong>Cross-Functional Collaboration</strong>
-                    <small>Coordinating with design, fabrication, and quality assurance teams</small>
+                    <small>Coordinating with design, fabrication, and validation teams</small>
                   </div>
                 </div>
                 <div class="focus-item-box">
@@ -903,33 +919,33 @@
       </div>
     </section>
 
-    <!-- CONTACT / SIGNAL TRANSMISSION -->
-    <section id="contact" class="section-padding signal-section">
+    <!-- SPIDER-SIGNAL / CONTACT SECTION -->
+    <section id="signal" class="section-padding signal-section">
       <div class="container">
         <div class="signal-box">
           <div class="signal-header text-center">
             <div class="spider-signal-beam" aria-hidden="true">
               <div class="beam-glow"></div>
               <div class="beam-emblem">
-                <i class="fa-solid fa-satellite-dish"></i>
+                <i class="fa-solid fa-spider"></i>
               </div>
             </div>
-            <div class="section-badge"><i class="fa-solid fa-tower-broadcast"></i> DIRECT COMMUNICATION</div>
-            <h2 class="section-title">CONNECT WITH ARFAD</h2>
-            <p class="section-subtitle">Actively interviewing for Hardware Validation, Silicon Bring-up, Test Engineering, and Embedded roles.</p>
+            <div class="section-badge"><i class="fa-solid fa-satellite-dish"></i> EMERGENCY COMMUNICATOR</div>
+            <h2 class="section-title">SHOOT THE SPIDER-SIGNAL</h2>
+            <p class="section-subtitle">Got a hardware mission, test validation role, or exciting project? Let's team up and build something extraordinary.</p>
           </div>
 
           <div class="signal-grid">
-            <!-- Left Contact Info -->
+            <!-- Left Info Panel -->
             <div class="signal-info">
               <h3 class="info-title">CONTACT COORDINATES</h3>
-              <p class="info-desc">Available for full-time opportunities, technical interviews, and engineering discussions. Feel free to connect directly:</p>
-
+              <p class="info-desc">My communication channels are open 24/7. Drop me a transmission and I will get back to you in a flash.</p>
+              
               <div class="contact-links">
                 <a href="mailto:arfadarfad96@gmail.com" class="contact-item">
                   <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
                   <div class="c-details">
-                    <small>PRIMARY EMAIL</small>
+                    <small>DIRECT EMAIL TRANSMISSION</small>
                     <span>arfadarfad96@gmail.com</span>
                   </div>
                 </a>
@@ -945,7 +961,7 @@
                 <a href="https://linkedin.com/in/mohammed-arfad-k" target="_blank" rel="noopener noreferrer" class="contact-item">
                   <div class="c-icon"><i class="fa-brands fa-linkedin-in"></i></div>
                   <div class="c-details">
-                    <small>LINKEDIN PROFILE</small>
+                    <small>LINKEDIN FREQUENCY</small>
                     <span>linkedin.com/in/mohammed-arfad-k</span>
                   </div>
                 </a>
@@ -953,7 +969,7 @@
                 <a href="https://github.com/arfad22" target="_blank" rel="noopener noreferrer" class="contact-item">
                   <div class="c-icon"><i class="fa-brands fa-github"></i></div>
                   <div class="c-details">
-                    <small>GITHUB REPOSITORIES</small>
+                    <small>SOURCE CODE &amp; REPOSITORIES</small>
                     <span>github.com/arfad22</span>
                   </div>
                 </a>
@@ -961,13 +977,13 @@
                 <div class="contact-item">
                   <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
                   <div class="c-details">
-                    <small>CURRENT BASE</small>
+                    <small>OPERATIONAL BASE</small>
                     <span>Bengaluru, Karnataka, India</span>
                   </div>
                 </div>
               </div>
 
-              <!-- Social Quick Links -->
+              <!-- Social Links Row -->
               <div class="social-links-row">
                 <a href="mailto:arfadarfad96@gmail.com" class="social-btn" title="Email"><i class="fa-solid fa-envelope"></i></a>
                 <a href="https://linkedin.com/in/mohammed-arfad-k" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -976,38 +992,38 @@
               </div>
             </div>
 
-            <!-- Right Interactive Contact Form -->
+            <!-- Right Interactive Form -->
             <div class="signal-form-wrapper">
               <form id="spiderContactForm" class="spider-form" novalidate>
                 <div class="form-group">
-                  <label for="senderName"><i class="fa-solid fa-user"></i> RECRUITER / HIRING MANAGER NAME</label>
-                  <input type="text" id="senderName" class="form-input" placeholder="e.g. Rahul Sharma / Intel HR Team" required>
+                  <label for="senderName"><i class="fa-solid fa-user"></i> YOUR NAME / CODENAME</label>
+                  <input type="text" id="senderName" class="form-input" placeholder="e.g. Hiring Manager / Recruiter" required>
                 </div>
 
                 <div class="form-group">
-                  <label for="senderEmail"><i class="fa-solid fa-at"></i> COMPANY / WORK EMAIL</label>
-                  <input type="email" id="senderEmail" class="form-input" placeholder="name@company.com" required>
+                  <label for="senderEmail"><i class="fa-solid fa-at"></i> FREQUENCY / EMAIL ADDRESS</label>
+                  <input type="email" id="senderEmail" class="form-input" placeholder="e.g. recruiter@intel.com" required>
                 </div>
 
                 <div class="form-group">
-                  <label for="missionType"><i class="fa-solid fa-briefcase"></i> OPPORTUNITY TYPE</label>
+                  <label for="missionType"><i class="fa-solid fa-shield"></i> MISSION OBJECTIVE</label>
                   <select id="missionType" class="form-input form-select">
-                    <option value="hardware-validation">Hardware / Validation Test Engineer Role</option>
-                    <option value="rtl-fpga">RTL / FPGA Digital Design Engineer</option>
+                    <option value="hardware">Hardware / Validation Test Engineer Role</option>
+                    <option value="rtl">RTL / FPGA Digital Design Opportunity</option>
                     <option value="embedded">Embedded Systems / Firmware Role</option>
-                    <option value="semiconductor">Semiconductor Product / Silicon Bring-up</option>
-                    <option value="inquiry">General Engineering Inquiry</option>
+                    <option value="consulting">Semiconductor / Silicon Bring-up</option>
+                    <option value="coffee">Technical Discussion &amp; Coffee</option>
                   </select>
                 </div>
 
                 <div class="form-group">
-                  <label for="senderMessage"><i class="fa-solid fa-message"></i> OPPORTUNITY OVERVIEW / MESSAGE</label>
-                  <textarea id="senderMessage" class="form-input form-textarea" rows="4" placeholder="Share details about the role, location, or scheduling an interview..." required></textarea>
+                  <label for="senderMessage"><i class="fa-solid fa-message"></i> TRANSMISSION MESSAGE</label>
+                  <textarea id="senderMessage" class="form-input form-textarea" rows="4" placeholder="Describe your mission parameters..." required></textarea>
                 </div>
 
                 <button type="submit" class="spidey-btn primary-btn submit-btn btn-thwip">
                   <span class="btn-spider-icon"><i class="fa-solid fa-paper-plane"></i></span>
-                  <span class="btn-text">DISPATCH MESSAGE</span>
+                  <span class="btn-text">DISPATCH TRANSMISSION</span>
                   <span class="btn-burst">SENT!</span>
                 </button>
               </form>
@@ -1016,8 +1032,8 @@
               <div id="formSuccessToast" class="form-toast" role="alert" aria-hidden="true">
                 <i class="fa-solid fa-circle-check"></i>
                 <div>
-                  <strong>MESSAGE DISPATCHED!</strong>
-                  <p>Thank you for reaching out! Arfad will reply to your email promptly.</p>
+                  <strong>TRANSMISSION RECEIVED!</strong>
+                  <p>Spider-Signal dispatched to Arfad. Response incoming promptly!</p>
                 </div>
               </div>
             </div>
@@ -1031,23 +1047,23 @@
   <footer class="spidey-footer">
     <div class="container footer-container">
       <div class="footer-brand">
-        <span class="logo-title">MOHAMMED ARFAD<span class="dot"> K</span></span>
-        <p class="footer-desc">Hardware &amp; Validation Test Engineer • ECE Graduate • RNSIT Bengaluru</p>
+        <span class="logo-title">ARFAD<span class="dot">.</span>K</span>
+        <p class="footer-desc">Hardware &amp; Validation Test Engineer • ECE Graduate • Bengaluru, India</p>
       </div>
 
       <div class="footer-quote">
-        <p>"Structured debugging, DFT principles, and relentless signal precision."</p>
+        <p>"Remember, with great hardware comes great responsibility."</p>
       </div>
 
       <div class="footer-actions">
-        <a href="#hero" class="back-to-top-btn" id="backToTop" aria-label="Return to top of page">
+        <a href="#hero" class="back-to-top-btn" id="backToTop" aria-label="Web swing to top">
           <i class="fa-solid fa-arrow-up"></i>
-          <span>BACK TO TOP</span>
+          <span>SWING TO TOP</span>
         </a>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Mohammed Arfad K • arfadarfad96@gmail.com • (+91) 8618724140 • Bengaluru, India</p>
+      <p>© 2026 Mohammed Arfad K • arfadarfad96@gmail.com • (+91) 8618724140 • Built with Spider-Verse energy.</p>
     </div>
   </footer>
 
