@@ -184,6 +184,79 @@
           </div>
         </div>
 
+        <!-- Right Hero Classified 3D Mask Card -->
+        <div class="hero-visual">
+          <div class="hero-mask-card-container">
+            <div class="card-glow-backdrop"></div>
+            <div class="classified-mask-card">
+              <!-- Top Left: Full Stack Badge -->
+              <div class="badge-top-fullstack">
+                <span>&lt;/&gt; FULL STACK</span>
+              </div>
+
+              <!-- Top Right: Classified Stamp -->
+              <div class="stamp-classified-tag">
+                HERO CLASSIFIED
+              </div>
+
+              <!-- Center 3D Mask SVG -->
+              <div class="mask-graphic-wrap">
+                <svg viewBox="0 0 240 290" class="hero-mask-svg">
+                  <defs>
+                    <radialGradient id="spidey3dMaskGrad" cx="48%" cy="38%" r="62%" fx="40%" fy="30%">
+                      <stop offset="0%" stop-color="#ff2e78" />
+                      <stop offset="35%" stop-color="#e5004f" />
+                      <stop offset="75%" stop-color="#9a0033" />
+                      <stop offset="100%" stop-color="#55001a" />
+                    </radialGradient>
+                    <filter id="eyeDepthShadow" x="-20%" y="-20%" width="140%" height="140%">
+                      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#000000" flood-opacity="0.8" />
+                    </filter>
+                    <clipPath id="maskEggClip">
+                      <path d="M 120 12 C 185 12 225 68 225 158 C 225 238 178 274 120 274 C 62 274 15 238 15 158 C 15 68 55 12 120 12 Z" />
+                    </clipPath>
+                  </defs>
+
+                  <!-- Mask Base Body -->
+                  <path d="M 120 12 C 185 12 225 68 225 158 C 225 238 178 274 120 274 C 62 274 15 238 15 158 C 15 68 55 12 120 12 Z" fill="url(#spidey3dMaskGrad)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1.5" />
+
+                  <!-- Web Grid Lines -->
+                  <g clip-path="url(#maskEggClip)" stroke="rgba(60, 0, 18, 0.55)" stroke-width="1.8" stroke-linecap="round">
+                    <line x1="120" y1="12" x2="120" y2="274" />
+                    <line x1="15" y1="145" x2="225" y2="145" />
+                    <line x1="25" y1="195" x2="215" y2="195" />
+                    <line x1="120" y1="88" x2="65" y2="20" />
+                    <line x1="120" y1="88" x2="175" y2="20" />
+                    <line x1="120" y1="88" x2="30" y2="80" />
+                    <line x1="120" y1="88" x2="210" y2="80" />
+                    <line x1="120" y1="88" x2="35" y2="145" />
+                    <line x1="120" y1="88" x2="205" y2="145" />
+                  </g>
+
+                  <!-- Top Specular Inner Rim Light -->
+                  <path d="M 120 18 C 175 18 212 68 212 145" fill="none" stroke="rgba(255, 255, 255, 0.22)" stroke-width="2.5" stroke-linecap="round" clip-path="url(#maskEggClip)" />
+
+                  <!-- Left Eye -->
+                  <path d="M 106 142 C 108 178 92 198 72 195 C 55 192 53 168 60 148 C 66 130 86 125 106 142 Z" fill="#0d0912" filter="url(#eyeDepthShadow)" />
+
+                  <!-- Right Eye -->
+                  <path d="M 134 142 C 132 178 148 198 168 195 C 185 192 187 168 180 148 C 174 130 154 125 134 142 Z" fill="#0d0912" filter="url(#eyeDepthShadow)" />
+                </svg>
+              </div>
+
+              <!-- Bottom Left: Yellow Badge -->
+              <div class="badge-bottom-react">
+                <span>{; REACT &amp; NODE</span>
+              </div>
+
+              <!-- Bottom Right: Cyan Badge -->
+              <div class="badge-bottom-ux">
+                <span>✨ UI/UX MAGIC</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
       </div>
 
